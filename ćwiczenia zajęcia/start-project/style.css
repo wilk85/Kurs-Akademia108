@@ -1,0 +1,386 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+span{
+    color: #1ac056;
+    font-size: 32px;
+    font-weight: 600;
+}
+section, footer{
+    padding: 30px 0;
+}
+::placeholder{
+    color: #b3b3b3;
+}
+.container{
+    padding: 30px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1-2 {
+    flex-basis: 50%;
+}
+
+/* Main nav */
+
+.main-nav{
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    background: rgb(249, 252, 254);
+    z-index: 50;
+}
+.main-nav ul{
+    list-style: none;
+}
+.main-nav li{
+    color: #1ac056;
+    display: inline-block;
+    padding: 15px 15px;
+}
+.main-nav a{
+    color: #1ac056;
+    text-decoration: none;
+}
+.main-nav #drop{
+    display: none;
+}
+.main-nav label{
+    display: none;
+}
+
+/* Head */
+
+header{
+    background: url(img/header.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+header h1, header h2{
+   display: inline-block;
+   font-size: 80px;
+   margin: 350px 0 0 0
+}
+header h1, header p{
+    color: #f9fcfe;
+    font-weight: 300;
+}
+header h2{
+    color: #1ac056;
+}
+header p{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+/* section 1 o mnie */
+
+.sek-o-mnie{
+    background: #f9fcfe;
+}
+.sek-o-mnie h3{
+    display: inline;
+    font-size: 36px;
+    font-weight: 300; 
+}
+.cont-omnie{
+    display: flex;
+    justify-content: center;
+}
+.div-foto{
+    height: auto;
+}
+.cont-omnie img{
+    height: 400px;
+    width: auto;
+    border: 10px solid #fff; 
+    border-radius: 10px;      
+}
+.cont-omnie p{
+    line-height: 25px;
+    text-align: left;
+    padding: 20px;
+}
+
+/* section 2 moje umiejętności */
+
+.sek-umiej{
+    background: f9fcfe;
+}
+.sek-umiej h3{
+    color: black;
+    display: inline;
+    font-size: 36px;
+    font-weight: 300;
+}
+.sek-umiej span{
+    color: #1ac056;
+    font-size: 32px;
+    font-weight: 600;
+}
+.sek-umiej .div-ikony{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.sek-umiej .div-ikony figure{
+   flex-basis: 20%;
+   font-size: 80px;
+   padding: 0 0 40px 0;
+}
+.sek-umiej .div-ikony figcaption{
+    font-size: 20px;
+}
+
+/* section 3 moje portfiolio */
+
+.sek-porft{
+    background: rgba(249, 252, 254,.5);
+}
+.sek-portf h3{
+    color: black;
+    display: inline;;
+    font-size: 36px;
+    font-weight: 300;
+}
+.sek-portf span{
+    color: #1ac056;
+    font-size: 32px;
+    font-weight: 600;
+}
+.p .p-item{
+    height: 350px;
+    margin: 0;
+    position: relative;
+    flex-basis: 33.33%;
+    max-height: 350px;
+    color: #fff;
+    overflow: hidden;
+}
+.p .p-item h3,
+.p .p-item h4{
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+.sek-portfol .p{
+    flex-wrap: wrap;
+}
+.p img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: all .3s;
+}
+.p .p-mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(33, 59, 80, .6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    z-index: 10;
+}
+.p .p-item:hover .p-mask{
+    opacity: 1;
+}
+.p-content .p-link{
+    color: #08f127;
+    font-size: 40px;
+}
+.p-content .p-link:hover{
+    color: #fff;
+    transition: all .4s;
+}
+.p .p-content{
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+.p .p-content p{
+    line-height: 20px;
+    padding: 25px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+.p .p-item:hover img{
+    transform: scale(1.2);
+} 
+
+/* footer  */
+
+.footer{
+    background: #213b50;
+}
+.footer address{
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 1.4;
+    margin-top: 40px;
+}
+.footer address a{
+    color: #1ac056;
+    transition: all .3s;
+    text-decoration: none;
+    
+}
+.footer address a:hover{
+    color: #fff;
+}
+.kontener h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+.footer .lewa{
+    align-self: flex-start;
+    text-align: left; 
+}
+footer input,
+footer textarea{
+    outline: none;
+    width: 400px;
+    background: #425869;
+    border: none;
+    padding: 10px;
+}
+.footer textarea{
+    resize: none;
+}
+.footer .ikony{
+    margin-top: 40px;
+    
+}
+.footer .ikony a{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 50px;
+    margin-right: 10px;
+    transition: all .3s;
+    text-align: center;
+}
+.footer .ikony a:hover{
+    color: #213b50;
+    background: #fff;
+}
+.footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.footer input[type="submit"]{
+    background: #1ac056;
+    color: #fff;
+    width: 25%;
+    align-self: flex-end;    
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #1ac056;
+}
+.footer input[type="submit"]:hover{
+    color: #1ac056;
+    background: #fff;
+}
+.footer .inputy{
+    align-items: flex-end; 
+    padding: 10px;
+}
+
+/*  imput:not ([type=submit]) wszystko z wyjatkiem tego inputa */
+
+
+
+/*           */
+/*  RESPONSYWNOść */
+@media (max-width:1170px){
+    .p .p-item{
+        flex-basis: 50%;
+    }
+    .p .p-item:last-child{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width:768px){
+    .container .col-1-2{
+        flex-basis: 100%;
+    }
+    .main-nav .menu-item{
+        display: block;
+        padding: 15px;
+        text-align: right;
+    }
+    .menu-list{
+        display: none;
+    }
+    .main-nav #drop:checked + .menu-list{
+        display: block;
+    }
+    .main-nav label{
+        display: block;
+        font-size: 1.5em;
+        color: #1ac056;
+        text-align: right;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .sek-umiej .div-ikony figure{
+        flex-basis: 50%;
+        margin-bottom: 45px;
+    }
+    .footer, 
+    .footer h2{
+        text-align: center;
+    }
+    .footer .ikony{
+        margin-bottom: 30px;
+        
+    }
+    .footer .inputy,
+    .footer textarea{
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    .footer input[type="submit"]{
+        align-self: center;
+    }
+    .footer .lewa{
+        text-align: center;
+    }
+    
+
+@media (max-width: 480px){
+    .sek-umiej .div-ikony figure{
+        flex-basis: 100%;
+    }
+    .p .p-item{
+        flex-basis: 100%;
+    }
+    .footer .lewa{
+        text-align: center;
+    }
+
+}
+
