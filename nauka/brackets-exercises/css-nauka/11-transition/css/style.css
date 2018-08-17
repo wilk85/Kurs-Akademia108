@@ -1,0 +1,43 @@
+div{
+margin: auto;
+}
+
+.box1{
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transition: all 1000ms;
+    top: 5%;
+}
+
+.box1:hover{
+    width: 300px;
+}
+
+.box2{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    transition: all 1000ms ease-in-out;
+    margin: 20px;
+    top: 25%;
+}
+
+.box2:hover{
+    height: 300px;
+}
+
+.box3{
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    transition: all 1000ms ease-in-out;
+    margin: 20px;
+    top: 45%;
+}
+
+.box3:hover{
+    width: 300px;
+    height: 300px;
+}

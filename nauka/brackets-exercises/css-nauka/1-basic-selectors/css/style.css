@@ -1,0 +1,31 @@
+p{
+    color: red;
+}
+
+#container{
+    color: blue;
+}
+
+.list-item{
+    color: green;
+}
+
+section > h2{ /*potomek jeden poziom niżej */
+    color: yellow;
+}
+
+section h2{ /*wszystkie potomki niżej */
+    color: orange;
+}
+
+.first-item + li{ /* bezpośrednie rodzeństwo 1 element na tym samym poz. */
+    color: chartreuse;
+}
+
+.first-item ~ li{ /* wszystkie elementy tego poziomu poza pierwszym */
+    color: gold;
+}
+
+p.first#main{ /* tylko p z klasa first który musi mieć #main */
+    color: gray;
+}

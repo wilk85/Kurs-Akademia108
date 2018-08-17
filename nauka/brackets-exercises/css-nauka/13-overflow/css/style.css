@@ -1,0 +1,23 @@
+p{
+    float: left;
+    width: 25%;
+    height: 200px;
+}
+
+p:nth-child(even){
+    background-color: gray;
+}
+
+p:nth-child(odd){
+    background-color: purple;
+}
+p:nth-child(2){
+    overflow: hidden;
+}
+
+p:nth-child(3){
+    overflow: auto;
+}
+p:nth-child(4){
+    overflow: scroll;
+}

@@ -1,0 +1,13 @@
+#para{ /* najwyżej zaraz po inline */
+    color: red;
+}
+.para{ /* niżej po id */
+    color: green;
+}
+p{ /* niżej po klasie */
+    color: yellow;
+}
+
+*{ /* najnizej w hierarchi */
+    color: aqua !important;
+}

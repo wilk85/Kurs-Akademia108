@@ -1,0 +1,20 @@
+a[title]{
+    color: gray;
+    font-size: 32px;
+}
+
+a[title="Main page"]{
+    color: lightblue;
+}
+
+a[title~="me"]{ /* tylda separacja ciągu */ 
+    color: yellow;
+}
+
+a[title*="tion"]{ /* gwiazdka wybiera tylko dany ciąg znaków z collection i section = tion*/
+    color: blueviolet;
+}
+
+a[title^="Container"]{ /* ^ Zawierające początek Container , znak dolara - atrybuty zakończone np na skills */
+    color: orange;
+}

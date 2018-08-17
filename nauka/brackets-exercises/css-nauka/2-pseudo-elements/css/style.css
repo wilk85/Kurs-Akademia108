@@ -1,0 +1,10 @@
+.content{
+    color: brown;
+    font-size: 36px;
+}
+
+.content::before, /* pseudo elementy */
+.content::after{
+    content: "*";
+}
+

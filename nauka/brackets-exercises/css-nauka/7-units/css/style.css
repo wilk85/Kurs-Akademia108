@@ -1,0 +1,25 @@
+html{
+    font-size: 20px;
+}
+
+#container > div{
+    background: #ff7900;
+    margin-bottom: 15px;
+}
+
+#pixels{
+    width: 400px;
+}
+
+#em{ /* 20px * 20em czyli wielkosc pikseli razy wielkosc em */
+    font-size: 20px; 
+    width: 20em;
+}
+
+#percent{
+    width: 50%;
+}
+
+#vw{
+    width: 50vw;
+}

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.flex-item{
+    color: #fff;
+    background: orange;
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 3px;
+    flex-basis: 40%;
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+}
+
+.flex-item:nth-child(odd){
+    background: gray;
+    /* flex-basis: 25%; */
+}
+.flex-item:nth-child(even){
+   /* max-height: 150px; */
+
+}
+
+.flex-item:nth-child(2){
+    order: 2;
+    flex-shrink: 4;
+}
+.flex-item:nth-child(1){
+    order: 1;
+    /* flex-grow: 8; */
+    background: red;
+}
+
+.container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+  
+    /* align-content: center;
+    justify-content: center; */
+    
+}
+
+/* flex-wrap: wrap, display:flex, flex-basis: %  najwazniejsze  */

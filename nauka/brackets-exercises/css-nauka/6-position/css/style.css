@@ -1,0 +1,41 @@
+#relative{ /* parent */
+    width: 600px;
+    height: 400px;
+    background: #dadde6;
+    position: relative;
+}
+
+#absolute{ /* child */
+    width: 400px;
+    height: 100px;
+    background: #b9bbc3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#static{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background: #ff7900;
+    z-index: 20;
+}
+
+#fixed{ /* wzgledem okna przegladarki */
+    width: 200px;
+    height: 200px;
+    background: #ff7900;
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+
+#sticky{
+    width: 100%;
+    height: 100px;
+    background: #ff7900;
+    position: sticky;
+    top: 10px;
+}

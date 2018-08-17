@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222;
+	color: #eee;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+#gallery {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+figure {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+figure figcaption {
+	text-align: center;
+}
+
+figure img{
+	width: 100%;
+	border: 2px solid #444;
+}
+
+@media (min-width: 480px){
+	#gallery{
+		padding: 0 30px;
+	}
+}
+
+@media (max-width: 480px){
+	figure{
+		width: 100%;
+	}
+	
+}
+
+@media (min-width: 768px){
+	figure{
+		width: 49%;
+	}
+}
+
+@media (min-width: 992px){
+	figure{
+		width: 33%;
+	}
+}
+
+

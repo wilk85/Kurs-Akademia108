@@ -1,0 +1,12 @@
+/* body{
+    background: 
+} */
+p{
+    background: rgba(248, 138, 4, .5);
+}
+
+section{
+    background: url('../img/truskawka.jpg') no-repeat center;
+    height: 500px;
+    background-size: cover;
+}

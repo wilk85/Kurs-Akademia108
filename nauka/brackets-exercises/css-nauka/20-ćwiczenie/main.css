@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+#red{
+    height: 50px;
+    width: 50px;
+    background: red;
+}
+#main-nav{
+    position: absolute;
+    background: teal;
+    text-align: center;
+    width: 300px;
+    top: 50px;
+    left: -300px;
+    transition: all .4s;
+}
+#main-nav.hide{
+    left: 0;
+}

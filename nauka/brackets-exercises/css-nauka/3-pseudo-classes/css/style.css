@@ -1,0 +1,31 @@
+.page-link{
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.page-link:hover{
+    color: green;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+input:focus{
+    border: 2px solid red;
+    outline: none; /* brak poświaty niebieskiej ustaw default */
+}
+
+/* muszą być ul li: dla pierwszego i ostatniego elementu */
+
+.item:first-child{
+    background: yellow;
+}
+.item:nth-child(3n){ /* co 3 element wszystkich dzieci */
+    background: gray;
+}
+.item:nth-of-type(4n){ /* jest to co 4 element tej listy */
+    background: red;
+}
+.item:last-child{
+    background: green;
+}

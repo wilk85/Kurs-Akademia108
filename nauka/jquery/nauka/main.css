@@ -1,0 +1,44 @@
+
+#first{
+    height: 300px;
+    width: 50%;
+    background: green;
+}
+#main-nav{
+    position: fixed;
+    width: 100%;
+    background: teal;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+}
+#main-nav.affix{
+    background: orangered;
+}
+#main-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#main-nav ul .list-item{
+    display: inline-block;
+}
+#main-nav ul .list-item a{
+    color: yellow;
+    line-height: 50px; /* jeśli obiekty w jednej linii są */
+}
+.container{
+    height: 100vh;
+}
+#showHide{
+    background: blue;
+    color: #fff;
+    padding: 10px 0;
+}
+#animacja{
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    margin: 15px;
+}

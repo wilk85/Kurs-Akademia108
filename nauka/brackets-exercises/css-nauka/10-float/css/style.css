@@ -1,0 +1,12 @@
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+/* float: none; domyślne ustawienie - wyłączanie go */
+
+p:last-child{
+    clear: both;
+}

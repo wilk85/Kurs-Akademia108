@@ -1,0 +1,56 @@
+body{
+    background-color: #213b50;
+    color: #fff;
+}
+
+form{
+    padding: 15px;
+    width: 600px;
+}
+
+
+input, textarea, select{
+    display: block;
+    background: #2b4a64;
+    border: none;
+    outline: none;
+    color: #fff;  
+    width: 200px;
+    margin-top: 5px;
+}
+
+input:focus, 
+textarea:focus,
+select:focus{
+    background: #4e708c;
+    border: 1px solid #fff;
+}
+
+/* label[for*='male'], label[for='agreement'] atrybut for zawiera dowolny ciąg male */
+
+input[type='submit']{
+    background: rgb(27, 209, 27);
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    width: 80px;
+    text-transform: uppercase;
+}
+input[type='submit']:hover{
+    background: #fff;
+    color: rgb(27, 209, 27);
+    cursor: pointer;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+
+input[type='radio'],
+input[type='checkbox']{
+    display: inline;
+    width: auto;
+}
