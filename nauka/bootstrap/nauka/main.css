@@ -1,0 +1,40 @@
+.red,.green{
+    height: 100px;
+}
+/* .red{
+    background: red;
+} */
+.green{
+    background: green;
+}
+.yellow{
+    height: 100px;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn-pink{
+    background-color: pink;
+}
+.btn-pink:hover{
+    background-color: yellow;
+}
+.bg-blue{
+    background-color: rgb(39, 39, 192);
+}
+.moja-klasa-div{
+    /*div jest flexem*/
+    justify-content: flex-end; /* drugie rozwiązanie zmiany pozycji nawigacji*/
+}
+.moja-klasa-ul{
+    margin-left: auto; /*pierwsze rozwiązanie zmiany pozycji nawigacji*/
+}
+.carousel-item img{
+    height: 300px;
+    object-fit: cover;
+}
+.carousel{
+    width: 50%;
+}
