@@ -1,0 +1,95 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: $font;
+}
+
+#main-header{
+    height: 100vh;
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .header-inner-container{
+        width: 90%; 
+        margin: 0 auto;
+        display: flex;
+
+        .header-inner-box{
+            flex-basis: 50%;
+            padding-top: 20px;
+
+            h1{
+                margin: 0;
+
+                .fas{
+                    color: $zolty;
+                    margin-right: 5px;
+                }
+            }
+
+            &.right{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                p{
+                    margin: 0;
+                }
+                .fas{
+                    transform: rotate(90deg); 
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    #main-form{
+        display: flex;
+        width: 30%;
+        flex-wrap: wrap;
+        position: absolute;
+        // justify-self: flex-end;
+        // align-self: flex-end;
+        right: 5%;  
+        bottom: 5%;    
+
+        span{
+            color: $zolty;
+        }
+
+        form{
+            padding: 10px;
+            background-color: $niebieski;
+
+            input, textarea{
+                width: 100%;
+                margin-bottom: 5px;
+                padding: 5px;
+                height: 30px;
+            }
+            textarea{
+                resize: none;
+                height: 40px;
+            }
+
+            input[type='submit']{
+                width: 30%;
+                background-color: $zolty;
+                text-transform: uppercase;
+                border: 1px solid $zolty;
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,33 @@
+@import 'zmienne';
+
+body {
+    height: 100vh;
+    margin: 0; 
+}
+
+#main-nav{
+    position: fixed; /*traci pozycję blokową, trzeba nadać szerokosc */
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    ul{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+        .list-item{
+            display: inline-block; 
+                a{
+                    color: $base-color;
+
+                    &:hover{
+                        color: #000; 
+                    }
+
+                    
+                }
+        }
+       
+}

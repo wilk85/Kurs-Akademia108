@@ -1,0 +1,13 @@
+@mixin centrowanieFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexCentered($display, $center, $wrap){
+    display: $display;
+    justify-content: $center;
+    align-items: $center;
+    flex-wrap: $wrap;
+}

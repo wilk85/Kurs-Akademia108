@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Open-sans", sans-serif; }
+
+#main-header {
+  height: 100vh;
+  background-image: url("../img/back.png");
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  #main-header .header-inner-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex; }
+    #main-header .header-inner-container .header-inner-box {
+      flex-basis: 50%;
+      padding-top: 20px; }
+      #main-header .header-inner-container .header-inner-box h1 {
+        margin: 0; }
+        #main-header .header-inner-container .header-inner-box h1 .fas {
+          color: #ecd407;
+          margin-right: 5px; }
+      #main-header .header-inner-container .header-inner-box.right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        #main-header .header-inner-container .header-inner-box.right p {
+          margin: 0; }
+        #main-header .header-inner-container .header-inner-box.right .fas {
+          transform: rotate(90deg);
+          margin-right: 10px; }
+  #main-header #main-form {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 5%;
+    bottom: 5%; }
+    #main-header #main-form span {
+      color: #ecd407; }
+    #main-header #main-form form {
+      padding: 10px;
+      background-color: #001d8a; }
+      #main-header #main-form form input, #main-header #main-form form textarea {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 5px;
+        height: 30px; }
+      #main-header #main-form form textarea {
+        resize: none;
+        height: 40px; }
+      #main-header #main-form form input[type='submit'] {
+        width: 30%;
+        background-color: #ecd407;
+        text-transform: uppercase;
+        border: 1px solid #ecd407; }
+
+#main-footer {
+  background-color: #292929;
+  padding: 50px 5%;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center; }
+  #main-footer .footer-box {
+    flex-basis: 50%; }
+  #main-footer .fas {
+    color: #292929;
+    background-color: #ecd407;
+    height: 40px;
+    width: 40px;
+    line-height: 40px; }
+    #main-footer .fas.fa-phone {
+      transform: rotate(90deg); }

@@ -1,0 +1,21 @@
+
+#main-footer{
+    background-color: $szary;
+    padding: 50px 5%; 
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    .footer-box{
+        flex-basis: 50%;
+    }
+    .fas{
+        color: $szary;
+        background-color: $zolty;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        &.fa-phone{
+            transform: rotate(90deg);
+        }
+    }
+}
